@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class ShopItemClass extends Component {
   constructor(props) {
-    super(props);
+    super();
   }
   render() {
     const { item } = this.props;
