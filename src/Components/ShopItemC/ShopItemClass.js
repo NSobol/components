@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+import ItemModel from "../Models/ItemModel";
 
 export class ShopItemClass extends Component {
   constructor(props) {
@@ -28,3 +30,7 @@ export class ShopItemClass extends Component {
     );
   }
 }
+
+ShopItemClass.propTypes = {
+  item: PropTypes.instanceOf(ItemModel).isRequired,
+};

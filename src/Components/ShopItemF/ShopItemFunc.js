@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+import ItemModel from "../Models/ItemModel";
 import "./ShopItemFunc.css";
 
 export function ShopItemFunc(props) {
@@ -24,3 +26,6 @@ export function ShopItemFunc(props) {
     </>
   );
 }
+ShopItemFunc.propTypes = {
+  item: PropTypes.instanceOf(ItemModel).isRequired,
+};
