@@ -8,12 +8,6 @@ html {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 .container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,6 +35,7 @@ h3 {
   min-height: 400px;
   position: relative;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 .options {
   display: -webkit-box;
@@ -53,46 +48,12 @@ h3 {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.main-content {
-  padding: 50px 46px 25px 20px;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  color: #222;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-}
-
-h1 {
-  letter-spacing: 0px;
-  letter-spacing: 0.02rem;
-  font-size: 48px;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-h3 {
-  color: #666;
-  font-size: 19px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.description {
-  margin-top: 20px;
-  width: 100%;
-}
 
 .highlight-window {
   height: 550px;
   width: 400px;
   background: #ccc;
-  background: url("../img/item-blue.jpg");
+  background: url("./images/item-blue.jpg");
   background-size: cover;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -116,7 +77,7 @@ h3 {
   height: 100%;
   opacity: 0;
   filter: alpha(opacity=0);
-  background: url("../img/item-black.jpg");
+  background: url("./images/item-black.jpg");
   background-size: cover;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
@@ -174,36 +135,7 @@ a:hover {
   text-decoration: underline;
   color: #666;
 }
-button {
-  background: #333;
-  border: none;
-  font-weight: 400;
-  height: 40px;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-}
-button:hover {
-  background: #555;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.divider {
-  width: 80%;
-  height: 1px;
-  background: #ddd;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .color-options {
   display: -webkit-box;
   display: -webkit-flex;
@@ -238,21 +170,6 @@ button:hover {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-}
-
-.purchase-info {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.price {
-  font-size: 40px;
-  font-size: 2.5rem;
 }
 
 .selection {
@@ -297,9 +214,7 @@ button:hover {
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
-.highlight-window.mobile {
-  display: none;
-}
+
 .range-picker .active:hover {
   background: #fff;
 }
@@ -345,13 +260,7 @@ button:hover {
     background: #fff;
     overflow: auto;
   }
-  h1 {
-    font-size: 2rem;
-  }
-  h3,
-  h2 {
-    font-size: 1rem;
-  }
+
   .container {
     background: #fff;
     overflow: auto;
@@ -359,11 +268,7 @@ button:hover {
   .background-element {
     display: none;
   }
-  .main-content {
-    overflow: auto;
-    height: auto;
-    padding-right: 25px;
-  }
+
   .options {
     -webkit-flex-flow: column;
     -ms-flex-flow: column;
@@ -382,13 +287,9 @@ button:hover {
     position: absolute;
     box-shadow: none;
     right: 0;
+    z-index: 10;
   }
-  .price {
-    margin-bottom: 15px;
-  }
-  .button {
-    width: 100%;
-  }
+
   .color-options {
     margin-bottom: 15px;
   }
@@ -396,11 +297,6 @@ button:hover {
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
-  }
-  .purchase-info {
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
   }
 }
 
@@ -412,15 +308,7 @@ button:hover {
     overflow: auto;
     height: auto;
   }
-  .highlight-window.mobile {
-    position: relative;
-    display: block;
-    height: 500px;
-    box-shadow: none;
-    border: 1px solid #ccc;
-    margin-top: 15px;
-    width: 100%;
-  }
+
   .container {
     overflow: auto;
   }

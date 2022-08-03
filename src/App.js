@@ -1,6 +1,7 @@
 import React from "react";
 import { ShopItemFunc } from "./Components/ShopItemF/ShopItemFunc";
 import { ShopItemClass } from "./Components/ShopItemC/ShopItemClass";
+import "./App.css";
 
 function App() {
   const item = {
