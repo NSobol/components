@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ItemModel } from "../Models/ItemModel";
+import ItemModel from "../../Models/ItemModel";
 import s from "./ShopItemFunc.module.css";
 
 export function ShopItemFunc(props) {

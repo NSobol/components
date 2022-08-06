@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ItemModel } from "../Models/ItemModel";
+import ItemModel from "../../Models/ItemModel";
 import s from "./ShopItemClass.module.css";
 
 export class ShopItemClass extends Component {
