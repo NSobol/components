@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ItemModel from "../../Models/ItemModel";
+//import ItemModel from "../../Models/ItemModel";
 import s from "./ShopItemFunc.module.css";
 
 export function ShopItemFunc(props) {
@@ -25,5 +25,10 @@ export function ShopItemFunc(props) {
   );
 }
 ShopItemFunc.propTypes = {
-  item: PropTypes.instanceOf(ItemModel),
+  brand: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  descriptionFull: PropTypes.string,
+  price: PropTypes.number,
+  currency: PropTypes.string,
 };
